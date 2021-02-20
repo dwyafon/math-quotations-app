@@ -63,7 +63,7 @@ function RandomQuote() {
       try {
         const response = await axios({
           method: 'GET',
-          url: 'http://quotes.stormconsultancy.co.uk/random.json'
+          url: 'https://api.taylor.rest/'
         });
         setQuote(response.data.quote);
         setAuthor(response.data.author);
