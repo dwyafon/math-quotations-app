@@ -63,7 +63,7 @@ function RandomQuote() {
       try {
         const response = await axios({
           method: 'GET',
-          url: 'https://api.taylor.rest/'
+          url: 'https://random-math-quote-api.herokuapp.com/'
         });
         setQuote(response.data.quote);
         setAuthor(response.data.author);
