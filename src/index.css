@@ -1,8 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 /* jost-regular - latin */
 @font-face {
@@ -37,4 +33,10 @@ body {
       format('truetype'),
     /* Safari, Android, iOS */ url('./fonts/amiri-v16-latin/amiri-v16-latin-regular.svg#Amiri')
       format('svg'); /* Legacy iOS */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
