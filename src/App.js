@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import breakpoints from './breakpoints'
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -16,6 +17,24 @@ const Wrapper = styled.div`
 const Quote = styled.div`
   margin: 3rem 12rem;
   font-size: 2.8rem;
+
+  ${breakpoints.sm`
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+  `}
+
+  ${breakpoints.md`
+    margin: 3em 6rem;
+  `}
+
+  ${breakpoints.lg`
+    margin: 3rem 12rem;
+    padding: 1rem;
+  `}
+
+${breakpoints.xl`
+    margin: 4rem 16rem;
+  `}
 `;
 
 const Author = styled.div`
