@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* jost-regular - latin */
 @font-face {
   font-family: 'Jost';
   font-style: normal;
@@ -14,6 +21,7 @@
       url('./fonts/jost-v6-latin/jost-v6-latin-regular.ttf') format('truetype');
 }
 
+/* amiri-regular - latin */
 @font-face {
   font-family: 'Amiri';
   font-style: normal;
@@ -29,10 +37,4 @@
       format('truetype'),
     /* Safari, Android, iOS */ url('./fonts/amiri-v16-latin/amiri-v16-latin-regular.svg#Amiri')
       format('svg'); /* Legacy iOS */
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }

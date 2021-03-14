@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 `;
 
 const Quote = styled.div`
+  margin: 3rem 12rem;
 
   ${breakpoints.sm`
     margin: 1rem auto 2rem;
@@ -23,37 +24,36 @@ const Quote = styled.div`
   `}
 
   ${breakpoints.md`
-    margin: 1rem 2rem;
+    margin: 3em 6rem;
     font-size: 2rem;
   `}
 
   ${breakpoints.lg`
-    margin: 4rem 6rem;
+    margin: 4rem 12rem;
     padding: 1rem;
     font-size: 2.5rem;
   `}
 
 ${breakpoints.xl`
-    margin: 1rem 8rem;
+    margin: 4rem 16rem;
     font-size: 2.8rem;
   `}
 `;
 
 const Author = styled.div`
   margin: 1rem;
-
+  max-width: 600px;
 
   ${breakpoints.sm`
     font-size: 1.5rem;
   `}
 
   ${breakpoints.md`
-    margin: 2em 5rem;
+    margin: 3em 6rem;
     font-size: 2rem;
   `}
 
   ${breakpoints.lg`
-    margin: 1rem 1rem;
     font-size: 2.2rem;
   `}
 
@@ -65,11 +65,11 @@ ${breakpoints.xl`
 const Button = styled.div`
   background: none;
   border: 1px solid #fff;
-  padding: 1rem 2rem;
-  border-radius: 4px;
+  padding: 15px 25px;
+  border-radius: 5px;
   cursor: pointer;
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 100px;
   font-family: 'Jost', sans-serif;
   `;
 
@@ -91,7 +91,7 @@ function RandomQuote() {
       hex2 += hexValues[index2];
     }
 
-    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
+    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2}) center center/cover`;
   }
 
   const handleClick = () => setEffectToggle(!effectToggle);
