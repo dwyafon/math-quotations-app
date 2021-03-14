@@ -53,7 +53,7 @@ function RandomQuote() {
       hex2 += hexValues[index2];
     }
 
-    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
+    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2}) center center/cover`;
   }
 
   const handleClick = () => setEffectToggle(!effectToggle);
