@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import breakpoints from './breakpoints'
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -10,56 +9,19 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-family: 'Amiri', serif;
+  font-family: 'Crimson Text', serif;
   color: #fff;
 `;
 
 const Quote = styled.div`
   margin: 3rem 12rem;
-
-  ${breakpoints.sm`
-    margin: 1rem auto 2rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-  `}
-
-  ${breakpoints.md`
-    margin: 3em 6rem;
-    font-size: 2rem;
-  `}
-
-  ${breakpoints.lg`
-    margin: 4rem 12rem;
-    padding: 1rem;
-    font-size: 2.5rem;
-  `}
-
-${breakpoints.xl`
-    margin: 4rem 16rem;
-    font-size: 2.8rem;
-  `}
+  font-size: 2.8rem;
 `;
 
 const Author = styled.div`
   margin: 1rem;
+  font-size: 1.8rem;
   max-width: 600px;
-
-  ${breakpoints.sm`
-    font-size: 1.5rem;
-  `}
-
-  ${breakpoints.md`
-    margin: 3em 6rem;
-    font-size: 2rem;
-  `}
-
-  ${breakpoints.lg`
-    font-size: 2.2rem;
-  `}
-
-${breakpoints.xl`
-    font-size: 2.5rem;
-  `}
 `;
 
 const Button = styled.div`
@@ -70,7 +32,7 @@ const Button = styled.div`
   cursor: pointer;
   color: #fff;
   margin-top: 100px;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   `;
 
 function RandomQuote() {
@@ -91,7 +53,7 @@ function RandomQuote() {
       hex2 += hexValues[index2];
     }
 
-    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2}) center center/cover`;
+    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
   }
 
   const handleClick = () => setEffectToggle(!effectToggle);
