@@ -15,7 +15,6 @@ const Wrapper = styled.div`
 `;
 
 const Quote = styled.div`
-  margin: 3rem 12rem;
 
   ${breakpoints.sm`
     margin: 1rem auto 2rem;
@@ -24,36 +23,37 @@ const Quote = styled.div`
   `}
 
   ${breakpoints.md`
-    margin: 3em 6rem;
+    margin: 1rem 2rem;
     font-size: 2rem;
   `}
 
   ${breakpoints.lg`
-    margin: 4rem 12rem;
+    margin: 4rem 6rem;
     padding: 1rem;
     font-size: 2.5rem;
   `}
 
 ${breakpoints.xl`
-    margin: 4rem 16rem;
+    margin: 1rem 8rem;
     font-size: 2.8rem;
   `}
 `;
 
 const Author = styled.div`
   margin: 1rem;
-  max-width: 600px;
+
 
   ${breakpoints.sm`
     font-size: 1.5rem;
   `}
 
   ${breakpoints.md`
-    margin: 3em 6rem;
+    margin: 2em 5rem;
     font-size: 2rem;
   `}
 
   ${breakpoints.lg`
+    margin: 1rem 1rem;
     font-size: 2.2rem;
   `}
 
@@ -65,11 +65,11 @@ ${breakpoints.xl`
 const Button = styled.div`
   background: none;
   border: 1px solid #fff;
-  padding: 15px 25px;
-  border-radius: 5px;
+  padding: 1rem 2rem;
+  border-radius: 4px;
   cursor: pointer;
   color: #fff;
-  margin-top: 100px;
+  margin-top: 5rem;
   font-family: 'Jost', sans-serif;
   `;
 
