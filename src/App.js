@@ -7,17 +7,12 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   text-align: center;
-  /* font-family: 'Jost', sans-serif; */
   color: #fff;
   height: 100vh;
 `
 
 const Quote = styled.div`
-  /* padding: 3rem 12rem; */
-  font-size: 2.8rem;
-
   ${breakpoints.sm`
     font-size: 1.5rem;
     padding: 2rem;
@@ -30,7 +25,6 @@ const Quote = styled.div`
     font-size: 2.5rem;
     padding: 6rem;
   `}
-
 `
 
 const Author = styled.div`

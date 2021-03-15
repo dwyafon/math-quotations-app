@@ -1,12 +1,11 @@
 @font-face {
   font-family: 'Jost';
-  src: local('Jost'),
-    url('./fonts/Jost-Regular.woff') format('woff'),
-    url('./fonts/Jost-Regular.woff2') format('woff2')
-
+  src: local('Jost'), url('./fonts/Jost-Regular.woff') format('woff'),
+    url('./fonts/Jost-Regular.woff2') format('woff2');
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +14,4 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
-
-
