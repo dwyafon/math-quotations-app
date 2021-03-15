@@ -1,38 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   text-align: center;
-  font-family: 'Jost', sans-serif;
+  /* font-family: 'Jost', sans-serif; */
   color: #fff;
+  height: 100vh;
 `;
 
 const Quote = styled.div`
-  margin: 3rem 12rem;
+  /* padding: 3rem 12rem; */
   font-size: 2.8rem;
 `;
 
 const Author = styled.div`
-  margin: 1rem;
+  /* padding: 1rem; */
   font-size: 1.8rem;
-  max-width: 600px;
+  /* max-width: 600px; */
 `;
 
 const Button = styled.div`
   background: none;
   border: 1px solid #fff;
-  padding: 15px 25px;
+  /* padding: 15px 25px; */
   border-radius: 5px;
   cursor: pointer;
   color: #fff;
-  margin-top: 100px;
-  font-family: 'Open Sans', sans-serif;
+  /* margin-top: 100px; */
+  /* font-family: 'Open Sans', sans-serif; */
   `;
 
 function RandomQuote() {
@@ -53,7 +53,7 @@ function RandomQuote() {
       hex2 += hexValues[index2];
     }
 
-    document.body.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
+    document.body.style.backgroundImage = `linear-gradient(45deg, ${hex1}, ${hex2})`;
   }
 
   const handleClick = () => setEffectToggle(!effectToggle);

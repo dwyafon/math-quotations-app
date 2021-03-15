@@ -1,20 +1,21 @@
 @font-face {
   font-family: 'Jost';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/jost-v6-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('./fonts/jost-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./fonts/jost-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./fonts/jost-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/jost-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/jost-v6-latin-regular.svg#Jost') format('svg'); /* Legacy iOS */
+  src: local('Jost'),
+    url('./fonts/Jost-Regular.woff') format('woff'),
+    url('./fonts/Jost-Regular.woff2') format('woff2')
+
 }
 
-body {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Jost';
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
 }
 
 
