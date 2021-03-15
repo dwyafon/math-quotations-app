@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Jost', sans-serif;
   color: #fff;
 `;
 
